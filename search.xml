@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Minecraft空岛生存——准备v2</title>
+      <link href="2021/05/02/mcIsland-2/"/>
+      <url>2021/05/02/mcIsland-2/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/02/xMCbv6aFm71ndXs.png" alt="cover"></p><p>经过一段时间，我意识到我之前对于空岛的准备存在问题。在上一个存档里，空岛的生物群系被设置为<code>minecraft:the_void</code>，导致不会下雨。因此，新的空岛生物群系被设为<code>minecraft:plains</code>。</p><p>另外，新的空岛用一棵树代替了树苗。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Minecraft空岛生存——准备</title>
       <link href="2021/05/02/mcIsland-1/"/>
       <url>2021/05/02/mcIsland-1/</url>

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-02T12:47:10.346Z</updated>
+  <updated>2021-05-02T15:52:21.653Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Minecraft空岛生存——准备v2</title>
+    <link href="http://example.com/2021/05/02/mcIsland-2/"/>
+    <id>http://example.com/2021/05/02/mcIsland-2/</id>
+    <published>2021-05-02T15:41:59.000Z</published>
+    <updated>2021-05-02T15:52:21.653Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/02/xMCbv6aFm71ndXs.png" alt="cover"></p><p>经过一段时间，我意识到我之前对于空岛的准备存在问题。在上一个存档里，空岛的生物群系被设置为<code>minecraft:the_void</code>，导致不会下雨。因此，新的空岛生物群系被设为<code>minecraft:plains</code>。</p><p>另外，新的空岛用一棵树代替了树苗。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/02/xMCbv6aFm71ndXs.png&quot; alt=&quot;cover&quot;&gt;&lt;/p&gt;
+&lt;p&gt;经过一段时间，我意识到我之前对于空岛的准备存在问题。在上一个存档里，空岛的生物群系被设置为&lt;code&gt;minec</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Minecraft空岛生存——准备</title>
