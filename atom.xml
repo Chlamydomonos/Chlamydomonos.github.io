@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-02T15:52:56.651Z</updated>
+  <updated>2021-05-03T05:05:09.432Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Minecraft空岛生存——Day1</title>
+    <link href="http://example.com/2021/05/03/mcIsland-3/"/>
+    <id>http://example.com/2021/05/03/mcIsland-3/</id>
+    <published>2021-05-03T02:08:46.000Z</published>
+    <updated>2021-05-03T05:05:09.432Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="cover"></p><link rel="stylesheet" type="text/css" href="/style/clm-iframe.css"><p>经历了艰难的准备后，我的空岛生存正式开始了。</p><p>首先要做的，当然就是砍掉空岛上仅有的一棵树。但是，砍这棵树的方式，其实有特别的讲究的。因为——</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/5939.html"></iframe></div><p>因此，砍伐第一棵树的正确方式是这样的：</p><ul><li>砍掉最下面的两块原木</li><li>用其中一块制作工作台</li><li>用另一块制作钩子（这还会剩下两个木板）</li><li>用钩子破坏所有树叶</li><li>砍掉其他原木</li></ul><p>经过以上的操作，我的背包里现在拥有——</p><ul><li>1x钩子</li><li>17x树苗</li><li>8x蚕</li><li>4x木棍</li><li>2x苹果</li><li>3x原木</li><li>2x木板</li></ul><p>此外，空岛中也有了一个工作台。</p><p>在我砍伐这颗树的时候，有些材料并没有被我捡到，而是掉下了空岛。由于我在准备阶段把世界设为无限循环，它们将会到达世界底层后从天空掉落，陷入了无尽的循环。也许，我把空岛扩建得大一些之后，可以把它们捡回来。</p><p>有了初期的资源之后，我开始制作第一个科技物品——木桶。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382132.html"></iframe></div><p>木桶可以把种树的产物发酵成泥土。这是无中生有的基础。有了木桶，我就可以从虚无之中创造一整个世界。</p><p>同时，我又种植了五棵树苗。</p><p><img src="https://i.loli.net/2021/05/03/ysm3BoJkUcaRKiT.png" alt="p1"></p><p>经过一天一夜的等待，这五棵树苗也长成了树。我砍伐了它们，获得了更多的木头、树苗、苹果和蚕。</p><p>由于我目前还处于大前期，泥土十分匮乏，所以，我回收了原来平台上的泥土，并用木板搭建了新的平台，把泥土分开放置，以便种植更多的树苗。但是，由于我的木板数量还不够，我只搭建了3*3的平台。</p><p>于是，这就是我第一天的成果——<br><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="p2"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png&quot; alt=&quot;cover&quot;&gt;&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style/clm-ifr</summary>
+      
+    
+    
+    
+    
+    <category term="Minecraft" scheme="http://example.com/tags/Minecraft/"/>
+    
+    <category term="Minecraft空岛生存" scheme="http://example.com/tags/Minecraft%E7%A9%BA%E5%B2%9B%E7%94%9F%E5%AD%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Minecraft空岛生存——准备v2</title>
