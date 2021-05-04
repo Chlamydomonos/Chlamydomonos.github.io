@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-03T05:24:24.630Z</updated>
+  <updated>2021-05-04T04:05:42.903Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,13 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Minecraft空岛生存——Day2与mod重配置</title>
+    <link href="http://example.com/2021/05/03/mcIsland-4/"/>
+    <id>http://example.com/2021/05/03/mcIsland-4/</id>
+    <published>2021-05-03T14:13:03.000Z</published>
+    <updated>2021-05-04T04:05:42.903Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/03/nHSMy2etDW6Z8Qz.png" alt="cover"></p><link rel="stylesheet" type="text/css" href="/style/clm-iframe.css"><p>今天，我几乎用了一天的时间来肝空岛……</p><span id="more"></span><p>在昨天的基础上，我收获了更多的木材，用木桶堆肥获得了更多的泥土，并搭建了一个拥有5*5泥土的平台与一个拥有5*2泥土的平台。<br><img src="https://i.loli.net/2021/05/03/oEulD73NBPsZy2a.png" alt="p1"><br>我在5*5的平台上种满了树苗，用来收获更多树苗和木材。在5*2的平台上，我也种满了树苗，用来饲养<strong>蚕</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382164.html"></iframe></div><p>我把蚕放在了刚长出的树上——<br><img src="https://i.loli.net/2021/05/03/oKAgxrSweTbmp7W.png" alt="p2"><br>令我震惊的是，在不到一分钟的时间里，这棵树的叶子就全部变成了被蚕侵蚀的状态。<br><img src="https://i.loli.net/2021/05/03/gtvruaVf7h4CE1A.png" alt="p3"></p><p>蚕会侵蚀所有相连的树叶，因此，我开始等待其他的树长出来。</p><p>不知不觉间，夜幕就降临了。让我意想不到的是，这个平台上居然刷出了怪物。<br><img src="https://i.loli.net/2021/05/03/pM9PLqBzy8voJmr.png" alt="p4"><br>就在我还在给怪物拍照的时候，它们朝我冲了过来……</p><p>为了躲避一只苦力怕，我连忙向后撤，却一脚踩空，从空岛摔了下去。特殊的世界设置导致我不会落入虚空死亡，而是在世界里无限循环。我从高空中掉回来，狠狠地摔在了苦力怕旁边……</p><p>结果就是——我摔死了，苦力怕也爆炸了。我在前一天下雨的时候用木桶收集的水被炸没了，我的掉落物也被炸出了空岛。我在空岛上唯一的箱子被炸掉了一半，幸好里面的东西没有损失。紧接着，更令人悲伤的事情来了。在我检查箱子的时候，我被骷髅一箭射死……</p><p>总之，经历四次死亡之后，我终于活着撑到了白天。这一天，养蚕区域其他的树也陆续长了出来。</p><p>破坏一个被蚕完全侵蚀的树叶方块，可以得到一个蚕和一个线。养蚕区域的十棵树，让我得到了几乎装满背包的蚕和线。于是，我用12个线合成了3个羊毛，做了床。接下来，我又用9个线合成了<strong>筛网</strong>，并且用木头制作了<strong>筛子</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382125.html"></iframe></div><p>筛子的功能是把泥土变成<strong>石子</strong>和各种种子。而四个石子就能合成一个圆石。因此，我需要更多的泥土，来进入石器时代。由于养蚕得到的线和蚕都可以发酵成泥土，我把养蚕区也扩建到了5*5，用来产出数量极大的蚕和线。</p><p>在痛苦地采集了一天一夜被蚕侵蚀的树叶之后，我受不了了。因此，我向游戏中加入了几个新的mod。它们分别是——</p><ul><li><p><a href="https://www.mcmod.cn/class/1955.html">连锁挖矿</a></p></li><li><p><a href="https://www.mcmod.cn/class/3482.html">方块信息显示</a></p></li><li><p><a href="https://www.mcmod.cn/class/2235.html">R键整理</a></p><p>（这个比较特殊，我并没有从上述页面的下载地址下载R键整理，而是这个——<a href="https://www.minecraftyard.com/inventory-tweaks-minecraft/">下载地址</a>）</p></li></ul><p>连锁挖矿让我现在能一下破坏一大片连起来的方块。很快，我的背包就被蚕和线塞满了。于是，我获得了很多（其实也就30多个……）泥土，制作了很多圆石。接下来，我用木头制作了<strong>锤子</strong>，用来进一步加工圆石，实现无中生更多东西。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382203.html"></iframe></div><p>可以看见，这个锤子把圆石变为砂砾，砂砾变成沙子，沙子变成<strong>尘土</strong>。而尘土放入装满水的木桶里就可以生成黏土。虽然我之前装着水的木桶被苦力怕炸掉了，但我不能就这样等着下雨。因为，我还需要至少7个骨粉。至于骨粉是用来干什么的，一会就知道了。因此，我合成了一把石剑，准备和怪物们决一死战。</p><p>我把养蚕区清空了一半，等待怪物刷出来。随着夜幕渐渐降临，两只僵尸出现在了狭窄的平台上。我手握石剑，几下斩杀了它们。除了几块腐肉之外，我竟然还得到了一个耐久即将耗尽的<strong>锇胸甲</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/40002.html"></iframe></div><p>我把腐肉扔进了木桶，发酵成泥土。但是，就在我进行这一操作的时候，一只苦力怕朝我冲了过来。我连忙躲避，结果又摔了下去。</p><p>经历了无数次惨痛的死亡，我终于意识到，在刷出怪之后就睡觉，让怪在白天烧死才是正确的选择。于是，我就这么做了。然后，我就被着火的僵尸打了。然后，我就被烧死了……</p><p>最后，我放弃了。不就是骨粉吗！用筛子筛尘土也可以得到啊！于是，我疯狂地攒泥土，并且又制作了大量的尘土，放进筛子，得到了6个骨粉。</p><p>只差一个骨粉了！在这一天的晚上，又一只骷髅被刷新了出来。我握紧手中的石剑，向养蚕区域走去。</p><p>来到养蚕区域，我发现，这只骷髅竟然刷新在树上！于是，我用方块悄悄搭上树冠，躲在障碍后，一击斩杀了骷髅，获得了两个骨头。</p><p>这下，我的骨粉数量一下增加到了12个。现在，万事俱备，只欠黏土。于是，我静止不动地等待了三天三夜。</p><p>终于，下雨了！我的木桶里蓄满了水。我把两个尘土放进水里，得到两个黏土块。挖掉它们，得到8个黏土球。把其中的7个与骨粉合成7个<strong>瓷土</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382165.html"></iframe></div><p>接着，使用瓷土，我制作了<strong>坩埚</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382130.html"></iframe></div><p>坩埚是一个伟大的设备，可以把四个圆石熔化成熔岩。有了它，我很快就能拥有刷石机了。但是，有一个问题——把熔岩从坩埚里转移出来需要用到桶，而桶是用3个铁锭制作的。</p><p>为了解决这个问题，我制作了<strong>燧石筛网</strong>。它由普通筛网和六个燧石制成，把它装在筛子上后，用筛子筛砂砾有一定概率得到<strong>矿物碎块</strong>，四个矿物碎块可以合成<strong>矿块</strong>，一个矿块可以在熔炉里熔炼成对应的锭。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382206.html"></iframe></div><p>于是，我开始疯狂地进行以下操作：</p><ul><li>收集蚕、线、树苗</li><li>填入木桶发酵成泥土</li><li>把泥土放入筛子得到石子和种子</li><li>把种子存进箱子，把石子合成为圆石</li><li>用锤子打碎圆石得到砂砾</li><li>把砂砾放入筛子得到矿物碎块</li><li>把矿物碎块合成为矿块</li></ul><p>途中，如果饿了，我就用苹果充饥。</p><p>就在我吃掉了最后一个苹果的时候，我突然发现——种树区域和养蚕区域的两棵大型橡树长到了一起！现在蚕侵蚀了所有树叶。要不是我的箱子里还有一点树苗，我的空岛生存就可以直接结束了。</p><p>于是，我失去了苹果的来源，只能靠<strong>烤蚕</strong>这种听上去就是黑暗料理的东西充饥。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382126.html"></iframe></div><p>终于，经过七天七夜的坚持，我成功了！我获得了三个铁矿块！我立刻把它们放进了熔炉，制成了三个铁锭。接下来，我果断地把它们做成了桶。</p><p>有了桶之后，我先造了个无限水池。这样，不仅有了无限的水源，从空岛上掉下来也不会摔死了。</p><p><img src="https://i.loli.net/2021/05/04/JUvkqzbHT14Dch6.png" alt="p5"></p><p>然后，我用筛泥土得到的副产物——花岗岩，闪长岩和安山岩，搭建了刷石机。</p><p><img src="https://i.loli.net/2021/05/03/nHSMy2etDW6Z8Qz.png" alt="p6"></p><p>终于，我有了极其稳定的建筑方块来源，也有了比较稳定的矿石来源（通过筛子）！</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/03/nHSMy2etDW6Z8Qz.png&quot; alt=&quot;cover&quot;&gt;&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style/clm-iframe.css&quot;&gt;
+
+&lt;p&gt;今天，我几乎用了一天的时间来肝空岛……&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Minecraft" scheme="http://example.com/tags/Minecraft/"/>
+    
+    <category term="Minecraft空岛生存" scheme="http://example.com/tags/Minecraft%E7%A9%BA%E5%B2%9B%E7%94%9F%E5%AD%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Minecraft空岛生存——Day1</title>
     <link href="http://example.com/2021/05/03/mcIsland-3/"/>
     <id>http://example.com/2021/05/03/mcIsland-3/</id>
     <published>2021-05-03T02:08:46.000Z</published>
-    <updated>2021-05-03T05:24:24.630Z</updated>
+    <updated>2021-05-03T14:27:05.142Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="cover"></p><link rel="stylesheet" type="text/css" href="/style/clm-iframe.css"><p>经历了艰难的准备后，我的空岛生存正式开始了。</p><span id="more"></span><p>首先要做的，当然就是砍掉空岛上仅有的一棵树。但是，砍这棵树的方式，其实有特别的讲究的。因为——</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/5939.html"></iframe></div><p>因此，砍伐第一棵树的正确方式是这样的：</p><ul><li>砍掉最下面的两块原木</li><li>用其中一块制作工作台</li><li>用另一块制作钩子（这还会剩下两个木板）</li><li>用钩子破坏所有树叶</li><li>砍掉其他原木</li></ul><p>经过以上的操作，我的背包里现在拥有——</p><ul><li>1x钩子</li><li>17x树苗</li><li>8x蚕</li><li>4x木棍</li><li>2x苹果</li><li>3x原木</li><li>2x木板</li></ul><p>此外，空岛中也有了一个工作台。</p><p>在我砍伐这颗树的时候，有些材料并没有被我捡到，而是掉下了空岛。由于我在准备阶段把世界设为无限循环，它们将会到达世界底层后从天空掉落，陷入了无尽的循环。也许，我把空岛扩建得大一些之后，可以把它们捡回来。</p><p>有了初期的资源之后，我开始制作第一个科技物品——木桶。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382132.html"></iframe></div><p>木桶可以把种树的产物发酵成泥土。这是无中生有的基础。有了木桶，我就可以从虚无之中创造一整个世界。</p><p>同时，我又种植了五棵树苗。</p><p><img src="https://i.loli.net/2021/05/03/ysm3BoJkUcaRKiT.png" alt="p1"></p><p>经过一天一夜的等待，这五棵树苗也长成了树。我砍伐了它们，获得了更多的木头、树苗、苹果和蚕。</p><p>由于我目前还处于大前期，泥土十分匮乏，所以，我回收了原来平台上的泥土，并用木板搭建了新的平台，把泥土分开放置，以便种植更多的树苗。但是，由于我的木板数量还不够，我只搭建了3*3的平台。</p><p>于是，这就是我第一天的成果——<br><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="p2"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="cover"></p><link rel="stylesheet" type="text/css" href="/style/clm-iframe.css"><p>经历了艰难的准备后，我的空岛生存正式开始了。</p><span id="more"></span><p>首先要做的，当然就是砍掉空岛上仅有的一棵树。但是，砍这棵树的方式，其实有特别的讲究的。因为——</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/5939.html"></iframe></div><p>因此，砍伐第一棵树的正确方式是这样的：</p><ul><li>砍掉最下面的两块原木</li><li>用其中一块制作工作台</li><li>用另一块制作钩子（这还会剩下两个木板）</li><li>用钩子破坏所有树叶</li><li>砍掉其他原木</li></ul><p>经过以上的操作，我的背包里现在拥有——</p><ul><li>1x钩子</li><li>17x树苗</li><li>8x蚕</li><li>4x木棍</li><li>2x苹果</li><li>3x原木</li><li>2x木板</li></ul><p>此外，空岛中也有了一个工作台。</p><p>在我砍伐这颗树的时候，有些材料并没有被我捡到，而是掉下了空岛。由于我在准备阶段把世界设为无限循环，它们将会到达世界底层后从天空掉落，陷入了无尽的循环。也许，我把空岛扩建得大一些之后，可以把它们捡回来。</p><p>有了初期的资源之后，我开始制作第一个科技物品——<strong>木桶</strong>。</p><div width=80% align=center>    <iframe class="clm-common-iframe" src="https://www.mcmod.cn/item/382132.html"></iframe></div><p>木桶可以把种树的产物发酵成泥土。这是无中生有的基础。有了木桶，我就可以从虚无之中创造一整个世界。</p><p>同时，我又种植了五棵树苗。</p><p><img src="https://i.loli.net/2021/05/03/ysm3BoJkUcaRKiT.png" alt="p1"></p><p>经过一天一夜的等待，这五棵树苗也长成了树。我砍伐了它们，获得了更多的木头、树苗、苹果和蚕。</p><p>由于我目前还处于大前期，泥土十分匮乏，所以，我回收了原来平台上的泥土，并用木板搭建了新的平台，把泥土分开放置，以便种植更多的树苗。但是，由于我的木板数量还不够，我只搭建了3*3的平台。</p><p>于是，这就是我第一天的成果——<br><img src="https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png" alt="p2"></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/05/03/MZUts2h16HXGSeW.png&quot; alt=&quot;cover&quot;&gt;&lt;/p&gt;
