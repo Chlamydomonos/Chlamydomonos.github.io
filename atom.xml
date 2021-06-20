@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-04T04:05:42.903Z</updated>
+  <updated>2021-06-20T10:12:53.358Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,82 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开局4个小绿人的坎巴拉生涯（1）——生涯开始</title>
+    <link href="http://example.com/2021/06/20/kspCareer-1/"/>
+    <id>http://example.com/2021/06/20/kspCareer-1/</id>
+    <published>2021-06-20T08:01:26.000Z</published>
+    <updated>2021-06-20T10:12:53.358Z</updated>
+    
+    <content type="html"><![CDATA[<p>在对游戏《坎巴拉太空计划》（简称KSP）有了比较深刻的了解之后，我开始了一次全新的普通难度生涯模式。</p><span id="more"></span><p><br><br><br></p><p>在一颗被称为Kerbin（坎星）的星球上，生活着一群被称为“坎巴拉人”的小绿人。他们的共同特征是——从小就有一个飞上天空的梦想。</p><p>于是，坎巴拉航天中心建立了。这个机构将会实现一个伟大的目标——把坎巴拉人送上太空，甚至更遥远的地方。</p><p>这，就是刚刚建成的坎巴拉航天中心的全貌——</p><p><img src="https://i.loli.net/2021/06/20/iZa7fHe9C1zMI3s.jpg" alt="20210620164928_1"></p><p>虽然只有简陋的设施和四名航天员，但是航天中心已经开始为飞上太空做准备。在世界第一纪录保持协会的资助下，航天中心开始了第一次发射任务。</p><p><img src="https://i.loli.net/2021/06/20/cWCIv75XAu4U9q1.jpg" alt="20210620155212_1"></p><p><img src="https://i.loli.net/2021/06/20/vqbZ4y3pNEe9SoV.jpg" alt="20210620155211_1"></p><p>这次任务将会是对航天技术的第一次实验。为了完成任务，航天中心的四名航天员之一，飞行员Jebediah将会亲自操纵这艘无异于炸药桶的危险“航天器”。</p><p><img src="https://i.loli.net/2021/06/20/sidvIEJmQ6pXkFA.jpg" alt="20210620155258_1"></p><p>这艘“航天器”由各公司在没有任何技术储备的情况下生产的零件组成。总部件数3个，它们分别是——</p><ul><li><p>Mk1指令舱</p><ul><li>由坎灵顿模型火箭和纸制品有限公司生产</li><li>是该公司的第一个产品</li><li>可以搭载一名乘员</li></ul></li><li><p>Mk16降落伞</p><ul><li>由航天中心独立制造（从路边捡来的）</li><li>可以保证一些小型航天器安全降落</li></ul></li><li><p>RT-5“跳蚤”固体燃料助推器</p><ul><li>由航天中心独立制造（从路边捡来的）</li><li>海平面推力162.909kN</li><li>消耗固体燃料15.821/s</li><li>可填充140单位固体燃料</li></ul></li></ul><p>为安全起见，飞船只填充了56单位固体燃料，具有362m/s的$\Delta V$。</p><blockquote><p>注：$\Delta V$指飞船在真空中耗尽燃料使自己增加的速度</p></blockquote>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在对游戏《坎巴拉太空计划》（简称KSP）有了比较深刻的了解之后，我开始了一次全新的普通难度生涯模式。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="KSP" scheme="http://example.com/tags/KSP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个神奇的Git教程（一）——基础的基础</title>
+    <link href="http://example.com/2021/05/09/gitTutorial1/"/>
+    <id>http://example.com/2021/05/09/gitTutorial1/</id>
+    <published>2021-05-09T11:16:05.000Z</published>
+    <updated>2021-05-09T11:20:00.186Z</updated>
+    
+    <content type="html"><![CDATA[<div align=center style="margin:20px;">    <div style="color: red; font-size:250%; border: 3px solid red; border-radius: 6px; display: inline-block">        <b>&nbsp;——注意——&nbsp;</b>    </div></div><link rel="stylesheet" type="text/css" href="/style/clm-code.css"><p>Git是本次班团活动“Project404智能系统”的必要工具。参加本次活动的同学们请务必学会基本的Git操作。</p><span id="more"></span><h1 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h1><h2 id="一-版本控制"><a href="#一-版本控制" class="headerlink" title="一. 版本控制"></a>一. 版本控制</h2><p>假设这样的场景——</p><ul><li><p>你正在开发一个项目。于是，你建立了一个源代码文件——<code>a.cpp</code>。</p></li><li><p>第一天，你完成了项目一半的内容，并且把它们保存在了<code>a.cpp</code>里面。</p></li><li><p>第二天，你又完成了项目四分之一的内容，并且删掉了第一天写的一小部分内容。可是，当你保存了<code>a.cpp</code>后，开始debug的时候，你才发现——你刚刚删掉的东西正是项目的关键代码。更可怕的是，你已经完全忘了你第一天是怎么写出的它们。</p></li><li><p>第三天，你长了教训。你绞尽脑汁，修复了第一天和第二天写的代码，并且把这个文件另存为<code>a_1.cpp</code>。</p></li><li><p>第四天，你完成了最后的四分之一，并把这个文件另存为<code>a_2.cpp</code>。</p></li><li><p>第五天，你修复了一些bug，并把这个文件另存为<code>a_3.cpp</code>。</p></li><li><p>第六天……</p></li><li><p>第七天……</p></li><li><p>最后，你的文件夹变成了这样——</p><p><img src="https://i.loli.net/2021/05/01/jiI89TJS4BrRGdE.jpg" alt="1.jpg"></p><div align="center" style="color: grey; margin: 10px;">图片仅供参考</div></li><li><p>于是，你不禁思考——有没有一个软件，自动帮我备份代码呢？</p></li></ul><p>再假设这样的场景——</p><ul><li>你和你的同学一起开发一个项目。为此，你建立了一个源代码文件——<code>a.cpp</code>。</li><li>第一天，你写了这个文件的一半，你的同学写了另一半，并把他的文件发给了你。</li><li>现在，你有两个名为<code>a.cpp</code>的文件。你把你同学的内容复制粘贴进了你自己的<code>a.cpp</code>里，并把这个合并后的文件发给了你的同学。</li><li>第二天，你们修复了程序中的若干bug。你修复完你的部分后，也收到了你的同学发给你的文件。</li><li>你发现，你的文件在第1, 3, 15, 24, ……行有修改，你同学的文件在第4, 8, 19, 33, ……行有修改。</li><li>于是，你只好又一行一行地检查代码，来看这行是否被你或者你的同学修改过。</li><li>于是，你不禁思考——有没有一个软件，自动帮我合并不同版本呢？</li></ul><div style="font-size: 200%;"><b>这个软件，就是版本控制系统。</b></div><p>版本控制系统的功能——</p><ul><li>接收用户提交的代码，记录提交历史记录</li><li>允许用户回退到自己之前的提交</li><li>允许用户创建不同的版本并发布</li><li>允许多个用户同时发布不同的版本，并合并这些版本成为新的版本</li></ul><p>为了实现以上功能，版本控制系统会建立一个版本库。版本库可能在用户自己的电脑上，也可能位于网络中的服务器上。因此，版本控制系统分为两种类型——</p><ul><li>中心式——只有一个中心版本库，位于服务器上，所有用户需要通过网络向这个版本库提交版本。比较著名的有SVN等。</li><li>分布式——每个用户的计算机上有一个版本库，用户直接向本地版本库提交版本，不同用户的版本库之间通过网络互相同步。在Git出现之前，比较著名的有BitKeeper等。</li></ul><h2 id="二-Git的诞生"><a href="#二-Git的诞生" class="headerlink" title="二. Git的诞生"></a>二. Git的诞生</h2><p>在2005年之前，Linus创建的Linux社区一直使用BitKeeper作为版本控制系统。但是，2005年，BitKeeper决定对Linux社区收费。一怒之下，Linus用两个星期的时间，用C语言开发了一个简单但是极其强大的分布式版本控制系统，用于管理Linux的代码。这个版本控制系统也被开源，称为<strong>Git</strong>。</p><p>几年后，Git风靡世界，成为最著名的版本控制系统。</p><h1 id="Git的原理"><a href="#Git的原理" class="headerlink" title="Git的原理"></a>Git的原理</h1><p>一个用Git管理的项目由三部分组成——工作区，暂存区和版本库。</p><p><img src="git.svg" alt="test"></p><h6 id="jump1"></h6><p>工作区就是用户实际看到的文件夹。暂存区和版本库都位于项目文件夹中的<code>.git</code>文件夹中。用户可以使用<code>add</code>指令把文件加入暂存区，也可以使用<code>checkout</code>指令用暂存区的文件更新工作区。当用户使用<code>commit</code>指令时，暂存区中的文件受到的修改会被总结成一个提交，放入版本库。在版本库里，提交之间形成一张图，代表其互相的依赖关系。版本库中可以有若干称为<code>分支</code>的指针指向一些提交，代表一个版本。同时，版本库中还有一个特殊指针<code>HEAD</code>，指向新的提交将会被放到的位置。用户可以用<code>reset</code>指令把<code>HEAD</code>的内容覆盖到暂存区。此外，由于不同的版本库之间通过网络互相连接，用户也可以使用<code>pull</code>和<code>push</code>指令把自己的版本库与远程版本库同步。</p><h1 id="如何安装Git"><a href="#如何安装Git" class="headerlink" title="如何安装Git"></a>如何安装Git</h1><p><del>鉴于使用Linux系统的大佬们应该都会用Git</del>，以下的内容只针对Windows用户。</p><p>为了安装Git，你首先要访问<a href="https://gitforwindows.org/">Git For Windows官网</a>下载最新版本Git安装包，然后双击运行。</p><p>接下来，一路点击Next直到出现以下界面：</p><p><img src="https://i.loli.net/2021/05/09/MW9SrKP58JNmYij.png" alt="p1"></p><p>在这里取消勾选<code>Git GUI Here</code>选项。</p><p>接下来，一路Next直到出现以下界面：</p><p><img src="https://i.loli.net/2021/05/09/rmgl7DbGa5uFkdR.png" alt="p2"></p><p>不喜欢Vim的小伙伴们可以将此选项改为“Use Visual Studio Code as Git’s default editor”。</p><p>接下来，一路Next直到安装完成即可。</p><h1 id="如何使用Git"><a href="#如何使用Git" class="headerlink" title="如何使用Git"></a>如何使用Git</h1><h2 id="零-打开Git-Bash"><a href="#零-打开Git-Bash" class="headerlink" title="零. 打开Git Bash"></a>零. 打开Git Bash</h2><p>Git Bash是一个用于在Windows系统上使用Git以及其他Linux命令的命令行工具。要想在某个文件夹中打开Git Bash，只需要右键单击该文件夹的<strong>空白部分</strong>，选择<code>Git Bash Here</code>。</p><p>在之后的教程中，凡是提到“在<code>xxx</code>文件夹中输入<code>yyy</code>”，均意为“在<code>xxx</code>文件夹打开的Git Bash中输入<code>yyy</code>”；凭空提到的“输入<code>xxx</code>”，均意为“在当前文件夹打开的Git Bash中输入<code>xxx</code>”。</p><h2 id="一-新建Git仓库"><a href="#一-新建Git仓库" class="headerlink" title="一. 新建Git仓库"></a>一. 新建Git仓库</h2><p>要想建立一个Git仓库其实是很简单的。你只需要输入<code>git init</code>，就可以把当前目录变成一个Git仓库。此时，该目录下应该会出现一个隐藏的<code>.git</code>文件夹。请勿删除该文件夹，原因见<a href="#jump1">此处</a>。</p><p>当然，也可以在想建立Git仓库的目录的上级目录中输入<code>git init 目录名</code>，来在该目录中建立Git仓库。</p><h2 id="二-克隆远程Git仓库"><a href="#二-克隆远程Git仓库" class="headerlink" title="二. 克隆远程Git仓库"></a>二. 克隆远程Git仓库</h2><p>要想克隆一个远程的Git仓库，其实是更加简单的。你只需要输入<code>git clone 远程仓库地址</code>，Git就会在当前目录下创建一个与远程仓库同名的文件夹，并把远程仓库克隆到本地。</p><h2 id="三-添加文件到暂存区"><a href="#三-添加文件到暂存区" class="headerlink" title="三. 添加文件到暂存区"></a>三. 添加文件到暂存区</h2><p>众所周知，为了记录版本，我们需要把经过了修改的文件添加到暂存区。使用<code>git add 文件名</code>命令，即可把对应文件添加到暂存区。当然，你也可以输入<code>git add 文件名1 文件名2 ……</code>来一次把多个文件添加到暂存区。</p><p>此外，你也可以输入<code>git add 文件夹名</code>来把该文件夹内以及该文件夹的所有子文件夹内的所有文件添加到暂存区。</p><p>因此，由于<code>.</code>代表当前目录，输入<code>git add .</code>即可把整个项目的全部文件添加到暂存区。然而，这么做可能是错误的，因为像编译结果等文件并不应该被纳入版本库。</p><h2 id="四-把暂存区文件提交进版本库"><a href="#四-把暂存区文件提交进版本库" class="headerlink" title="四. 把暂存区文件提交进版本库"></a>四. 把暂存区文件提交进版本库</h2><p>这是Git最关键的操作之一。使用<code>git commit -m &quot;提交消息&quot;</code>命令，可以把暂存区提交进版本库。注意，这里的提交消息是必需的，最好在提交消息中简要描述你对文件做的更改。当然，提交之后，暂存区将被清空，在你下次提交更改之前，你需要重新进行添加文件到暂存区的工作。</p><h2 id="五-把本地仓库与远程仓库连接"><a href="#五-把本地仓库与远程仓库连接" class="headerlink" title="五. 把本地仓库与远程仓库连接"></a>五. 把本地仓库与远程仓库连接</h2><p>对于从远程克隆下来的仓库，这步已经在克隆过程中完成了。因此，只有在本地创建的仓库需要执行此步骤。</p><p>输入<code>git remote add 远程仓库名称 远程仓库地址</code>来把本地仓库与远程仓库连接。注意，一般把第一个连接的远程仓库命名为<code>origin</code>。</p><h2 id="六-同步本地仓库与远程仓库"><a href="#六-同步本地仓库与远程仓库" class="headerlink" title="六. 同步本地仓库与远程仓库"></a>六. 同步本地仓库与远程仓库</h2><p>同步仓库的操作非常重要，但也是非常简单的。输入<code>git pull 远程仓库名 分支名</code>即可把远程仓库上某个分支的内容同步到本地，输入<code>git push 远程仓库名 分支名</code>即可把本地的内容同步到远程仓库。注意，在每次同步时，最好先<code>pull</code>再<code>push</code>。此外，如果远程仓库上还没有分支，你可以使用<code>git push -u 远程仓库名 分支名</code>来新建并同步分支。一般来说，当你第一次向远程仓库上传更改时，你需要使用<code>git push origin master</code>或<code>git push origin main</code>（如果你很重视政治正确）来在远程仓库中建立一个主分支。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>对于目前的班级活动工作，使用Git的工作流程基本为——</p><ul><li>克隆远程仓库到本地</li><li>做出自己的修改</li><li>使用<code>git add .</code>添加项目全部文件到暂存区（对于班级项目来说，这样并不会有危险，详见下一章教程）</li><li>使用<code>git commit -m &quot;提交信息&quot;</code>提交更改</li><li>使用<code>git pull origin master</code>及<code>git push origin master</code>同步更改到远程仓库</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;div align=center style=&quot;margin:20px;&quot;&gt;
+    &lt;div style=&quot;color: red; font-size:250%; border: 3px solid red; border-radius: 6px; display: inline-block&quot;&gt;
+        &lt;b&gt;&amp;nbsp;——注意——&amp;nbsp;&lt;/b&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style/clm-code.css&quot;&gt;
+
+&lt;p&gt;Git是本次班团活动“Project404智能系统”的必要工具。参加本次活动的同学们请务必学会基本的Git操作。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Git" scheme="http://example.com/tags/Git/"/>
+    
+    <category term="Git教程" scheme="http://example.com/tags/Git%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对代码块的测试</title>
+    <link href="http://example.com/2021/05/09/testCode/"/>
+    <id>http://example.com/2021/05/09/testCode/</id>
+    <published>2021-05-09T02:29:22.000Z</published>
+    <updated>2021-05-09T02:44:05.871Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="/style/clm-code.css"><p>下面是一个代码块：</p><pre><code>#include &lt;cstdio&gt;int main(){    printf(&quot;Suondeea\n&quot;);    return 0;}</code></pre><p>下面还是一个代码块：</p><pre><code>#include &lt;cstdio&gt;int main()&#123;    printf(&quot;Suondeea\n&quot;);    return 0;&#125;</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style/clm-code.css&quot;&gt;
+
+&lt;p&gt;下面是一个代码块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+#include &amp;lt;cstdio&amp;gt;
+
+int main()
+{
+    p</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Minecraft空岛生存——Day2与mod重配置</title>
