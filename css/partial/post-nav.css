@@ -1,0 +1,62 @@
+#post-nav-top-buttons {
+  margin-bottom: 0px;
+}
+
+.post-button {
+  padding: 0.5rem;
+}
+.post-button a {
+  color: black;
+}
+.post-button a :hover {
+  text-decoration: underline;
+}
+
+.post-button-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#post-prev-column {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#post-next-column {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+div.post-nav-card-content {
+  padding: 0.5rem;
+}
+div.post-nav-card-content a {
+  color: black;
+}
+div.post-nav-card-content a :hover {
+  text-decoration: underline;
+}
+
+.post-title-in-nav {
+  font-weight: bolder;
+}
+
+#titles-in-post {
+  font-size: smaller;
+}
+#titles-in-post li {
+  margin-left: 0.5em;
+}
+#titles-in-post a:hover {
+  text-decoration: underline;
+}
+
+.post-nav-scroll-area {
+  margin: 0.1rem;
+  overflow-y: scroll;
+}
+.post-nav-scroll-area ::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.post-nav-scroll-content {
+  height: max-content;
+}

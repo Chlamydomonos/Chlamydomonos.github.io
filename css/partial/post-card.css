@@ -1,0 +1,32 @@
+.post-card {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-card-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.post-card-title-container {
+  margin-bottom: 0.125rem;
+  padding-bottom: 0.125rem;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0)) 30 30 stretch;
+}
+
+.post-card-content img {
+  border-radius: 0.4rem;
+}
+
+.post-excerpt {
+  color: black;
+}
+
+.all-button-container {
+  padding-top: 1rem;
+}

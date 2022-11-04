@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Cloudomonos去中心化系统开发笔记（二） | Suondeea
+    </title>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/9ed2d62345.js" crossorigin="anonymous"></script>
+    
+<script src="/js/utils/color.js"></script>
+
+    
+<script src="/js/page-jump.js"></script>
+
+
+    
+    
+<link rel="stylesheet" href="/color-themes/light.css">
+
+
+    
+    
+<link rel="stylesheet" href="/hljs-themes/hljs-theme-light.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    
+        <header class="post-header is-hidden-mobile ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        Cloudomonos去中心化系统开发笔记（二）
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+        <header class="post-header is-hidden-mobile  post-header-placeholder without-content ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        Cloudomonos去中心化系统开发笔记（二）
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+<div class="columns is-gapless">
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+    <div class="column without-content">
+        <div class="background-1 main-column">
+            <div>
+    <div id="post-title-and-cover">
+        <div id="cover-div">
+            <img id="cover-div-img" src="/assets/generated_cover/POST_NAME_OF_postsOFcloud2.md.png">
+        </div>
+        <div id="cover-blur-outer">
+            <div id="cover-blur-inner">
+                <img id="cover-blur-img" src="/assets/generated_cover/POST_NAME_OF_postsOFcloud2.md.png ">
+            </div>
+        </div>
+        <div id="post-title-background">
+            <div id="post-title-text">
+                Cloudomonos去中心化系统开发笔记（二）
+                
+<header class="post-tags">
+    <div class="tags">
+        
+                <a class="tag post-tag" href="/tags/Cloudomonos/">Cloudomonos</a>
+        
+    </div>
+</header>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="post-date background-2">
+                
+                        <p>发布时间: 2022-01-10, 03:47:42</p>
+                
+
+                
+                        <p>上次更新: 2022-01-12, 03:37:06</p>
+                
+            </div>
+            <div class="content background-2" id="post-content-background" style="padding: 0.5rem;">
+                <div id="all-post-contents">
+                    <h1 id="一-基于树莓派的网桥"><a href="#一-基于树莓派的网桥" class="headerlink" title="一. 基于树莓派的网桥"></a>一. 基于树莓派的网桥</h1><h2 id="4-树莓派上内网穿透的建立"><a href="#4-树莓派上内网穿透的建立" class="headerlink" title="4. 树莓派上内网穿透的建立"></a>4. 树莓派上内网穿透的建立</h2><p>在上一篇文章的一系列操作后，基于树莓派的网桥已经搭建好了。但是，现在，树莓派仍然只能访问内网和Zerotier网络，无法访问外网。我在学校尝试配置树莓派网桥时，<a target="_blank" rel="noopener" href="https://c7w.tech/">c7w</a>利用树莓派在同一个网络里搭建了内网穿透。于是，我跟随<a target="_blank" rel="noopener" href="https://c7w.tech/dear-memory-with-nana-1/">c7w的博客</a>记录下的当时的配置过程，在我的树莓派上配置了内网穿透。配置完成后，内网中运行的众多网络服务就可以直接在外网访问了。</p>
+<p>在配置好内网穿透之后，我又把一台年龄接近我自己的旧笔记本电脑安装了Ubuntu系统，作为Cloudomonos中的一个长期运行的节点。</p>
+<h1 id="二-Cloudomonos系统模块——Nodomonos"><a href="#二-Cloudomonos系统模块——Nodomonos" class="headerlink" title="二. Cloudomonos系统模块——Nodomonos"></a>二. Cloudomonos系统模块——Nodomonos</h1><h2 id="1-设想"><a href="#1-设想" class="headerlink" title="1. 设想"></a>1. 设想</h2><p>由于将来的Cloudomonos系统不仅会通过网络通信，也会通过串口，蓝牙，甚至手动传递文本等多种方式进行通信，我决定开发一个用于Cloudomonos中的设备互相识别的模块——<strong>Nodomonos</strong>。这是我对于Nodomonos的最初设想：</p>
+<ul>
+<li>每个Nodomonos节点有一个独特的UID，用于互相识别。</li>
+<li>各个Nodomonos节点组成去中心化的Cloudomonos网络后，一个节点提出传输数据的请求，数据可以自动通过网络中的通路传输到目标节点。</li>
+<li>由于加载了Nodomonos节点的设备算力差距巨大，Nodomonos需要有简化的轻量版。</li>
+<li>Nodomonos具有可扩展性，可以通过加载不同的通信模块，完成在不同协议和媒介下的通信。</li>
+</ul>
+<p>为了完成这些目标，我决定先用Java实现可以在Windows和Linux系统上运行的，使用网络互相通信的第一代Nodomonos。（使用Java的原因其实只是我最近一直在用，而第一代Nodomonos只用于验证用途，需要快速开发出来）</p>
+<h2 id="2-Nodomonos的设计"><a href="#2-Nodomonos的设计" class="headerlink" title="2. Nodomonos的设计"></a>2. Nodomonos的设计</h2><p>初版Nodomonos将由两个模块组成：一个核心模块<code>NodomonosCore</code>，和一个可选模块<code>NodomonosTCP</code>（虽然如果不选这个模块的话它就什么都干不了了）</p>
+<h3 id="NodomonosCore模块"><a href="#NodomonosCore模块" class="headerlink" title="NodomonosCore模块"></a>NodomonosCore模块</h3><p>NodomonosCore需要实现以下功能：</p>
+<ul>
+<li>启动时，读取配置文件，加载节点数据</li>
+<li>从模块目录加载各个子模块，建立完整的节点</li>
+<li>节点建立后，如果自己是新节点，就访问Cloudomonos网络，获取自己分配到的UID；否则，直接从存档文件加载UID</li>
+<li>节点的UID确认后，向Cloudomonos网络发起连接请求，加入Cloudomonos网络</li>
+<li>连接上Cloudomonos网络后，根据自己的缓存以及网络上的信息，建立网络中各节点的连接表，并在后台持续运行</li>
+<li>持续运行期间，反复处理以下任务：<ul>
+<li>每隔指定时间（在配置文件中指定）检测各节点的在线状态，把连接不到的节点标记为离线，并在Cloudomonos网络中广播它们的离线信息</li>
+<li>接收其他节点发送的离线信息，用它们更新自己的节点连接表</li>
+<li>如果有新的节点加入网络，向它分配UID，并把新节点的在线信息在网络中广播</li>
+<li>接收其他节点广播的在线信息，更新自己的节点连接表</li>
+<li>如果有节点发出了经过自己的数据传输请求，把数据传输到路径中的下一节点</li>
+<li>监听一个本地端口（在配置文件中指定），用于接收用户对节点的指令</li>
+</ul>
+</li>
+</ul>
+<p>为了更快地完成NodomonosCore模块，我从<a target="_blank" rel="noopener" href="https://github.com/Amethyst-QAQ/Dua">Dua</a>项目中分离了Json读写的模块，并把它们组成了一个新项目——<a target="_blank" rel="noopener" href="https://github.com/Chlamydomonos/Chlamydomonoson">Chlamydomonoson</a>。接下来，就是逐一实现NodomonosCore的功能。</p>
+<h3 id="Nodomonos数据格式"><a href="#Nodomonos数据格式" class="headerlink" title="Nodomonos数据格式"></a>Nodomonos数据格式</h3><p>由于Nodomonos各节点间要传输很多数据，需要设计这些数据的格式。目前，我使用了很简单的第一版Nodomonos数据格式。在这一版中，各节点间传输的数据流由以下部分组成：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>长度</th>
+<th>功能</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据头</td>
+<td>2字节</td>
+<td>说明这个数据包是Nodomonos数据包</td>
+<td><code>0x4e44</code></td>
+</tr>
+<tr>
+<td>版本号</td>
+<td>1字节</td>
+<td>指出数据包来源的协议版本</td>
+<td><code>0x01</code></td>
+</tr>
+<tr>
+<td>来源</td>
+<td>4字节</td>
+<td>数据发送者的UID</td>
+<td>-</td>
+</tr>
+<tr>
+<td>发送时间</td>
+<td>8字节</td>
+<td>数据包发出时的时间戳</td>
+<td>-</td>
+</tr>
+<tr>
+<td>可接受延迟</td>
+<td>4字节</td>
+<td>可以接受的最大延迟，单位为秒</td>
+<td><code>0xffffffff</code>（此值代表任何延迟均可接受，即使它大于<code>0xffffffff</code>）</td>
+</tr>
+<tr>
+<td>指令ID</td>
+<td>2字节</td>
+<td>指出数据包由哪个传输指令发送</td>
+<td>-</td>
+</tr>
+<tr>
+<td>指令自定义数据长度</td>
+<td>4字节</td>
+<td>指令发来的自定义数据的长度</td>
+<td>-</td>
+</tr>
+<tr>
+<td>指令自定义数据</td>
+<td>不定（由指令自定义数据长度指定）</td>
+<td>指令的自定义数据</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>一个节点受到指令后，会先检查距离指令发送是否已经超过了可接受延迟。如果已经超过，指令将被忽略；否则，节点将处理指令。</p>
+<p>在Nodomonos中，各个指令的处理代码也将是动态加载的，方便模块的扩展。目前的第一版NodomonosCore会包含以下的内置指令：</p>
+<h4 id="新节点上线"><a href="#新节点上线" class="headerlink" title="新节点上线"></a>新节点上线</h4><p><strong>指令ID：</strong> 1</p>
+<p><strong>指令自定义数据：</strong></p>
+<p>无</p>
+<p>该指令由刚刚建立的新节点发给一个已知且在网络中的完整节点（具有节点列表记录功能的节点）</p>
+<hr>
+<h4 id="新节点分配UID"><a href="#新节点分配UID" class="headerlink" title="新节点分配UID"></a>新节点分配UID</h4><p><strong>指令ID：</strong> 2</p>
+<p><strong>指令自定义数据：</strong></p>
+<p>一个新UID，长4字节</p>
+<p>该指令由一个完整节点发给还没有UID的新节点</p>
+<hr>
+<h4 id="广播指令"><a href="#广播指令" class="headerlink" title="广播指令"></a>广播指令</h4><p><strong>指令ID：</strong> 3</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>广播发起节点的UID，长4字节</li>
+<li>广播ID，是一个随机整数，长4字节</li>
+<li>该指令第一次被发出时的时间戳，长8字节</li>
+<li>超时时间，长8字节，单位为秒</li>
+<li>另一条完整的Nodomonos指令，长度不定</li>
+</ul>
+<p>这条指令发出后，会在所有节点间广播，直到所有节点都已经收到指令或者距离该指令第一次发出经过的时间大于超时时间。各个节点收到该指令后，会执行其中附带的指令。</p>
+<hr>
+<h4 id="建立连接"><a href="#建立连接" class="headerlink" title="建立连接"></a>建立连接</h4><p><strong>指令ID：</strong> 4</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>源节点UID，长4字节</li>
+<li>若干个目标节点描述，每个长6字节，由以下内容组成：<ul>
+<li>目标节点UID，长4字节</li>
+<li>连接模块ID，长2字节</li>
+</ul>
+</li>
+</ul>
+<p>该指令由任意节点发出，会让收到指令的节点在节点连接图中添加从源节点到目标节点的若干双向连接，并指定用于连接的模块ID。</p>
+<hr>
+<h4 id="删除连接"><a href="#删除连接" class="headerlink" title="删除连接"></a>删除连接</h4><p><strong>指令ID：</strong> 5</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>源节点UID，长4字节</li>
+<li>若干个目标节点描述，每个长6字节，由以下内容组成：<ul>
+<li>目标节点UID，长4字节</li>
+<li>连接模块ID，长2字节</li>
+</ul>
+</li>
+</ul>
+<p>该指令由任意节点发出，会让收到指令的节点在节点连接图中删除指令中给出的所有连接。</p>
+<hr>
+<h4 id="摧毁节点"><a href="#摧毁节点" class="headerlink" title="摧毁节点"></a>摧毁节点</h4><p><strong>指令ID：</strong> 6</p>
+<p><strong>指令自定义数据：</strong></p>
+<p>要摧毁的节点UID，长4字节</p>
+<p>该指令由任意节点发出，会让收到指令的节点从节点连接图中删除指定的节点。该UID不会再被分配给新的节点。</p>
+<hr>
+<h4 id="查询节点连接表"><a href="#查询节点连接表" class="headerlink" title="查询节点连接表"></a>查询节点连接表</h4><p><strong>指令ID：</strong> 7</p>
+<p><strong>指令自定义数据：</strong></p>
+<p>无</p>
+<p>该指令由完整节点发出，向另一个节点查询节点连接表。</p>
+<hr>
+<h4 id="提供节点连接表"><a href="#提供节点连接表" class="headerlink" title="提供节点连接表"></a>提供节点连接表</h4><p><strong>指令ID：</strong> 8</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>节点数量，长4字节</li>
+<li>若干个节点，每个由以下数据组成：<ul>
+<li>节点UID，长4字节</li>
+<li>节点的连接数量，长4字节</li>
+<li>若干个连接，每个由以下数据组成：<ul>
+<li>目标节点UID，长4字节</li>
+<li>连接模块ID，长2字节</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>该指令由完整节点发出，向另一个节点提供节点连接表。</p>
+<hr>
+<h4 id="节点离线"><a href="#节点离线" class="headerlink" title="节点离线"></a>节点离线</h4><p><strong>指令ID：</strong> 9</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>离线的节点UID，长4字节</li>
+</ul>
+<p>该指令由任何节点发出，让收到的节点把指定节点标记为离线</p>
+<hr>
+<h4 id="节点重新上线"><a href="#节点重新上线" class="headerlink" title="节点重新上线"></a>节点重新上线</h4><p><strong>指令ID：</strong> 10</p>
+<p><strong>指令自定义数据：</strong></p>
+<ul>
+<li>重新上线的节点UID，长4字节</li>
+</ul>
+<p>该指令由任何节点发出，让收到的节点把指定节点标记为在线</p>
+
+                </div>
+            </div>
+            <div class="comment-container">
+                
+
+
+        <div class="comment">
+            <script src="https://utteranc.es/client.js"
+                repo="Chlamydomonos/blog-comments"
+                issue-term="pathname"
+                
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-3 is-hidden-mobile without-content">
+        <div class="container post-side without-content">
+            
+
+<div class="card" id="profile-card">
+    
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="https://s2.loli.net/2022/01/07/C5idKy4ZL8rOSJc.png" alt="Placeholder image">
+                </figure>
+            </div>
+    
+    <div class="card-content profile-card-content">
+        <div class="user-avatar-and-name">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img class="user-avatar" src="https://s2.loli.net/2022/01/07/2KhZqiJQt3vY8g1.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content user-name-div">
+                    <p class="title user-name ">Chlamydomonos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content user-information">
+            <p class="user-description  has-text-centered">
+                Xia'd tschilhib'sgn
+            </p>
+            <p class="user-location  has-text-centered">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>Chlamydomonosia</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+            <div class="cards-margin without-content"></div>
+            <div class="card post-nav vertical-scroll">
+    
+            <div class="columns is-gapless" id="post-nav-top-buttons">
+                <div class="column" id="post-prev-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2022/01/13/thaum2022/">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <span>上一页</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column" id="post-next-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2022/01/09/cloud1/">
+                            <span class="icon-text">
+                                <span>下一页</span>
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="post-nav-scroll-area">
+        <div class="post-nav-scroll-content">
+            <div class="card-content post-nav-card-content">
+                <p class="post-title-in-nav">
+                    <a href="#post-title-text">
+                        Cloudomonos去中心化系统开发笔记（二）
+                    </a>
+                </p>
+                <div id="titles-in-post">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+</div>
+<footer class="footer" id="page-footer">
+    <div class="is-flex is-justify-content-center">
+        <div id="page-footer-text">
+            <p>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></p>
+            <p>Theme by <a target="_blank" rel="noopener" href="https://github.com/Chlamydomonos/hexo-theme-chlamydomonosia">Chlamydomonos</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/post-header.js"></script>
+
+
+<script src="/js/post-nav.js"></script>
+
+
+<script src="/js/post-title.js"></script>
+
+    
+    
+            
+<script src="/js/lifegame.js"></script>
+
+    
+
+    <div class="is-hidden" id="chlamydomonos-translations">
+        <div class="tr-expand">展开 ▷</div>
+        <div class="tr-retract">收回 ◁</div>
+    </div>
+    
+<script src="/js/expandable-frame.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        Cloudomonos去中心化系统开发笔记（一） | Suondeea
+    </title>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/9ed2d62345.js" crossorigin="anonymous"></script>
+    
+<script src="/js/utils/color.js"></script>
+
+    
+<script src="/js/page-jump.js"></script>
+
+
+    
+    
+<link rel="stylesheet" href="/color-themes/light.css">
+
+
+    
+    
+<link rel="stylesheet" href="/hljs-themes/hljs-theme-light.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    
+        <header class="post-header is-hidden-mobile ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        Cloudomonos去中心化系统开发笔记（一）
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+        <header class="post-header is-hidden-mobile  post-header-placeholder without-content ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        Cloudomonos去中心化系统开发笔记（一）
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+<div class="columns is-gapless">
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+    <div class="column without-content">
+        <div class="background-1 main-column">
+            <div>
+    <div id="post-title-and-cover">
+        <div id="cover-div">
+            <img id="cover-div-img" src="/assets/generated_cover/POST_NAME_OF_postsOFcloud1.md.png">
+        </div>
+        <div id="cover-blur-outer">
+            <div id="cover-blur-inner">
+                <img id="cover-blur-img" src="/assets/generated_cover/POST_NAME_OF_postsOFcloud1.md.png ">
+            </div>
+        </div>
+        <div id="post-title-background">
+            <div id="post-title-text">
+                Cloudomonos去中心化系统开发笔记（一）
+                
+<header class="post-tags">
+    <div class="tags">
+        
+                <a class="tag post-tag" href="/tags/Cloudomonos/">Cloudomonos</a>
+        
+    </div>
+</header>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="post-date background-2">
+                
+                        <p>发布时间: 2022-01-09, 02:16:42</p>
+                
+
+                
+                        <p>上次更新: 2022-01-10, 11:56:56</p>
+                
+            </div>
+            <div class="content background-2" id="post-content-background" style="padding: 0.5rem;">
+                <div id="all-post-contents">
+                    <p>最近，我正在考虑开发一个去中心化Minecraft服务器系统。但是，看了<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Tu411S7GH?share_source=copy_web">这个B站视频</a>之后，我萌生了一个想法：为什么不把这个系统加入一个更加通用的新系统中呢？于是，我建立了这个项目——<strong>Cloudomonos去中心化系统</strong>。现在，这个项目还是一个很初步的想法。它的功能将会涵盖同步文件、控制单片机设备、转发Minecraft服务器数据包等实用功能，也可能会加入像上述视频中系统一样的分布式计算功能。接下来的内容，就会是Cloudomonos系统的完整搭建过程。</p>
+<h1 id="一-基于树莓派的网桥"><a href="#一-基于树莓派的网桥" class="headerlink" title="一. 基于树莓派的网桥"></a>一. 基于树莓派的网桥</h1><p>现在，我首先会搭建这个系统的基础——利用树莓派组成的网桥。由于我并没有公网IP，要想让不同位置的设备互相访问，就只能使用内网穿透或者虚拟局域网服务。而我恰好有一块树莓派，可以利用它，同时搭建内网穿透和虚拟局域网，并且组成网桥，使得我能远程访问家里的局域网。</p>
+<h2 id="1-树莓派操作系统的安装与配置"><a href="#1-树莓派操作系统的安装与配置" class="headerlink" title="1. 树莓派操作系统的安装与配置"></a>1. 树莓派操作系统的安装与配置</h2><p>为方便起见，在开始操作前，我格式化了树莓派的存储卡，并重新安装了操作系统。接下来，经过一系列简单的配置（具体配置方式可以参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43002202/article/details/103872595">这篇文章</a>），树莓派就可以用电脑远程控制了。</p>
+<p>接下来，由于树莓派连接的是家里的WiFi，需要对路由器进行一些简单的设置。</p>
+<p>找到路由器中的这个应用：</p>
+<p><img src="https://s2.loli.net/2022/01/09/GCcZEoDYTkWtnih.png" alt="1641710891(1)"></p>
+<p>对树莓派分配一个静态IP。</p>
+<p><img src="https://s2.loli.net/2022/01/09/Br2ekXRYm3lwtQO.png" alt="1641710947(1)"></p>
+<p>这步之后，树莓派的操作系统就基本配置完成了。</p>
+<h2 id="2-树莓派上Zerotier的安装"><a href="#2-树莓派上Zerotier的安装" class="headerlink" title="2. 树莓派上Zerotier的安装"></a>2. 树莓派上Zerotier的安装</h2><p><strong>Zerotier</strong>是一个高效并且免费的虚拟局域网工具，非常适合用于Cloudomonos的搭建。要使用Zerotier，需要先到其<a target="_blank" rel="noopener" href="https://www.zerotier.com/">官网</a>注册一个账号，再创建一个网络。这里，我已经拥有了如图所示的网络：</p>
+<p><img src="https://s2.loli.net/2022/01/09/l2CItboNwJS5veQ.png" alt="1641711351(1)"></p>
+<p>接下来，为了保证Zerotier网络分配的IP地址不与路由器分配的IP地址冲突，对网络的IP自动分配池进行设置：</p>
+<p><img src="https://s2.loli.net/2022/01/09/xStDLoc8jiFkOzq.png" alt="1641711524(1)"></p>
+<p>由于路由器分配的地址从<code>192.168.0.100</code>开始，这里的地址改用<code>192.168.1.100</code>开始。</p>
+<p>我的电脑已经用Windows版的Zerotier客户端连接到了网络，并自动分配了地址<code>192.168.1.189</code>。</p>
+<p>接下来，需要把树莓派也连接到Zerotier网络。首先利用官网上给出的命令在树莓派上安装Zerotier客户端：</p>
+<p><code>curl -s https://install.zerotier.com | sudo bash</code></p>
+<p>客户端安装完成后，可以使用<code>sudo zerotier-cli -h</code>命令查看客户端的使用帮助。这里，直接使用<code>sudo zerotier-cli join 8286ac0e471d5a3c</code>加入Zerotier网络。</p>
+<p>加入Zerotier网络后，为了方便后续操作，我给树莓派分配了一个不在自动分配池中的特殊IP地址——<code>192.168.6.1</code>。</p>
+<p><img src="https://s2.loli.net/2022/01/09/vNroK2i9hPxTqBM.png" alt="1641712148(1)"></p>
+<p>为了验证树莓派是否加入了Zerotier网络，可以用已经加入网络的电脑试图通过<code>192.168.6.1</code>连接树莓派。</p>
+<h2 id="3-树莓派上网桥的建立"><a href="#3-树莓派上网桥的建立" class="headerlink" title="3. 树莓派上网桥的建立"></a>3. 树莓派上网桥的建立</h2><p>Zerotier官网上提供了<a target="_blank" rel="noopener" href="https://zerotier.atlassian.net/wiki/spaces/SD/pages/193134593/Bridge+your+ZeroTier+and+local+network+with+a+RaspberryPi">用树莓派桥接物理局域网与Zerotier网络的教程</a>。我曾在学校按照教程配置过树莓派，但效果却十分玄学。因此，这次配置，我决定按照教程，从头开始，再尝试解决出现的问题。</p>
+<p>由于Zerotier官网上的教程是英文的，这里给出一个简化版——</p>
+<ul>
+<li><p>开始配置树莓派前，确认你有办法在不联网的情况下操作树莓派。（这至少需要键盘和显示器。由于我只能在家里找到没有USB接口的古老键盘和没有HDMI接口的古老显示器，最终的解决方案是使用电视当显示器并借了一个键盘）</p>
+</li>
+<li><p>找一根网线，把树莓派与路由器连接。</p>
+</li>
+<li><p>开始配置前，再次确认一些信息：</p>
+<ul>
+<li>你的Zerotier网络ID</li>
+<li>你的路由器DHCP分配的IP范围</li>
+<li>你的路由器的IP地址</li>
+</ul>
+<p>在我操作时，我的Zerotier网络ID为<code>8286ac0e471d5a3c</code>，路由器DHCP分配的IP范围为<code>192.168.0.100</code>到<code>192.168.0.149</code>，路由器的IP地址为<code>192.168.0.1</code>。同时，我的网络里还有一台IP地址为<code>192.168.0.2</code>的路由器，但这并不影响网络的配置。</p>
+</li>
+<li><p>首先，更新树莓派系统并重启。输入以下命令：</p>
+<p><code>sudo apt update &amp;&amp; sudo apt -y full-upgrade &amp;&amp; sudo reboot</code></p>
+</li>
+<li><p>接下来，如果没有安装Zerotier和加入网络，按以下内容操作；否则，略过此步：</p>
+<ul>
+<li><code>curl -s https://install.zerotier.com | sudo bash</code></li>
+<li><code>sudo zerotier-cli join 你的Zerotier网络ID</code></li>
+</ul>
+</li>
+<li><p>接下来，设置一些系统变量。依次输入以下命令：</p>
+<ul>
+<li><code>NETWORK_ID=你的Zerotier网络ID</code></li>
+<li><code>BR_IF=&quot;br0&quot;</code></li>
+<li><code>BR_ADDR=你希望网桥在的IP地址</code>（这里最好与路由器的DHCP范围处于同一网段）</li>
+<li><code>GW_ADDR=路由器的IP地址</code></li>
+</ul>
+<p>这里，我把网桥地址设置为了<code>192.168.0.50</code>。</p>
+</li>
+<li><p>接下来，依次输入以下命令：</p>
+<ul>
+<li><code>sudo zerotier-cli set $NETWORK_ID allowManaged=0</code></li>
+<li><code>sudo zerotier-cli listnetworks</code></li>
+</ul>
+<p>输入这两条命令后，命令行应该会显示类似下图的内容。</p>
+<p><img src="https://s2.loli.net/2022/01/10/h17yKuzHqNU4Fs6.png" alt="1641744261(1)"></p>
+<p>记住其中形如<code>zt********</code>的值（我这里是<code>ztrta3cvd3</code>）。</p>
+</li>
+<li><p>接下来，设置下一个系统变量：</p>
+<ul>
+<li><code>ZT_IF=刚才记住的值</code></li>
+</ul>
+</li>
+<li><p>接下来，进入Zerotier网络的配置网站，对网络中的树莓派授权，分配一个IP。（最好与路由器的DHCP在同一网段。我分配了<code>192.168.0.25</code>。）在设置选项中启用全部两个选项。</p>
+<p><img src="https://s2.loli.net/2022/01/10/r3QkwAL1KvZg2fG.png" alt="1641744900(1)"></p>
+</li>
+<li><p>接下来，卸载树莓派默认的网络系统，启用systemd系统，并配置网桥。按顺序输入以下命令：</p>
+<ul>
+<li><code>sudo apt remove --purge --auto-remove dhcpcd5 fake-hwclock ifupdown isc-dhcp-client isc-dhcp-common openresolv</code></li>
+<li><code>sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf;</code></li>
+<li><code>sudo systemctl enable systemd-networkd;</code></li>
+<li><code>sudo systemctl enable systemd-resolved;</code></li>
+<li><code>sudo systemctl enable systemd-timesyncd;</code></li>
+<li><p><code>sudo zerotier-cli set $NETWORK_ID allowManaged=0</code>（这里很奇怪，我也不知道为什么这条要再输一次。似乎不输也是可以的）</p>
+</li>
+<li><pre><code class="hljs plaintext">cat &lt;&lt; EOF | sudo tee /etc/systemd/network/25-bridge-br0.network
+[Match]
+Name=$BR_IF
+
+[Network]
+Address=$BR_ADDR
+Gateway=$GW_ADDR
+DNS=1.1.1.1 # 这是谷歌的DNS服务器，已经被墙。建议换成一个国内可用的地址。
+EOF</code></pre>
+<pre><code class="hljs plaintext">cat &lt;&lt; EOF | sudo tee /etc/systemd/network/br0.netdev
+[NetDev]
+Name=$BR_IF
+Kind=bridge
+EOF</code></pre>
+<pre><code class="hljs plaintext">cat &lt;&lt; EOF | sudo tee /etc/systemd/network/25-bridge-br0-zt.network
+[Match]
+Name=$ZT_IF</code></pre>
+<pre><code class="hljs plaintext">[Network]
+Bridge=$BR_IF
+EOF</code></pre>
+<pre><code class="hljs plaintext">cat &lt;&lt; EOF | sudo tee /etc/systemd/network/25-bridge-br0-en.network
+[Match]
+Name=eth0 # 也许是en*，建议先用ifconfig确认一下
+
+[Network]
+Bridge=$BR_IF
+EOF</code></pre>
+</li>
+</ul>
+</li>
+<li><p>接下来，对Zerotier网络进行设置。</p>
+<ul>
+<li><p>把IP自动分配池设为与路由器的DHCP在同一网段并互不重叠。</p>
+<p><img src="https://s2.loli.net/2022/01/10/y6wFTp7EKVPRGXs.png" alt="1641745028(1)"></p>
+</li>
+<li><p>在<code>Managed Routes</code>一栏删除默认路由，并添加一个新路由，左侧填入<code>一个可以包含路由器DHCP池的CIDR地址</code>，右侧填入<code>你的路由器IP地址</code>。例如，我的路由器分配网段是<code>192.168.0.x</code>，所以左侧填入<code>192.168.0.0/16</code>。</p>
+<p><img src="https://s2.loli.net/2022/01/10/UQdzHjTWtcLs64V.png" alt="1641745218(1)"></p>
+</li>
+</ul>
+</li>
+<li><p>最后，使用<code>sudo reboot</code>重启树莓派，理论上来说网桥就配置成功了。</p>
+</li>
+</ul>
+<p>我按照教程配置了树莓派。然而，最后重启之后，树莓派却根本没有连上有线网络。根据漫长的检查，我发现了问题——我在启用了systemd之后才连接网线，树莓派的自动网络配置系统此时已经被卸载，不能正常连接到网络。</p>
+<p>于是，我只能给树莓派重新刷系统，再来一遍。</p>
+<p>这次，我注意了以下事项：</p>
+<ul>
+<li>最重要的一点：<strong>在开始任何配置前，先把树莓派连上有线网络！</strong></li>
+<li>此外，连上有线网络后，在路由器中给树莓派分配一个固定IP。</li>
+</ul>
+<p>再次输完所有指令并重启树莓派后，树莓派确实连上了网络，路由器中也出现了一个地址为网桥地址的匿名设备。</p>
+<p><img src="https://s2.loli.net/2022/01/10/SldD59FTMjmcnhU.png" alt="1641745593(1)"></p>
+<p>这时，从树莓派的IP地址已经不能SSH连接到树莓派了，取而代之的是网桥地址。对于VNC，也需要从网桥地址连接。</p>
+<p>然而，这时，树莓派出现了下一个问题：不能解析域名。这明显是DNS服务器的问题，因此我开始尝试重新指定DNS服务器。</p>
+<p>我参考了多篇文章，尝试了多个方案，最终发现，<a target="_blank" rel="noopener" href="https://www.icode9.com/content-4-603911.html">这篇文章</a>中提到的方法是有效的。当然，树莓派并未默认安装<code>vim</code>，要想编辑文件，只能用<code>vi</code>或<code>tee</code>等其他方法。</p>
+<p>最终，在修改了DNS地址后，网桥的配置完全成功。Zerotier网络和真实的局域网被完全统一为了一个网络。两个网络中的计算机可以随意互相访问，基本没有任何障碍。</p>
+
+                </div>
+            </div>
+            <div class="comment-container">
+                
+
+
+        <div class="comment">
+            <script src="https://utteranc.es/client.js"
+                repo="Chlamydomonos/blog-comments"
+                issue-term="pathname"
+                
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-3 is-hidden-mobile without-content">
+        <div class="container post-side without-content">
+            
+
+<div class="card" id="profile-card">
+    
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="https://s2.loli.net/2022/01/07/C5idKy4ZL8rOSJc.png" alt="Placeholder image">
+                </figure>
+            </div>
+    
+    <div class="card-content profile-card-content">
+        <div class="user-avatar-and-name">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img class="user-avatar" src="https://s2.loli.net/2022/01/07/2KhZqiJQt3vY8g1.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content user-name-div">
+                    <p class="title user-name ">Chlamydomonos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content user-information">
+            <p class="user-description  has-text-centered">
+                Xia'd tschilhib'sgn
+            </p>
+            <p class="user-location  has-text-centered">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>Chlamydomonosia</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+            <div class="cards-margin without-content"></div>
+            <div class="card post-nav vertical-scroll">
+    
+            <div class="columns is-gapless" id="post-nav-top-buttons">
+                <div class="column" id="post-prev-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2022/01/10/cloud2/">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <span>上一页</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column" id="post-next-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2021/07/10/kspCareer-7/">
+                            <span class="icon-text">
+                                <span>下一页</span>
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="post-nav-scroll-area">
+        <div class="post-nav-scroll-content">
+            <div class="card-content post-nav-card-content">
+                <p class="post-title-in-nav">
+                    <a href="#post-title-text">
+                        Cloudomonos去中心化系统开发笔记（一）
+                    </a>
+                </p>
+                <div id="titles-in-post">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+</div>
+<footer class="footer" id="page-footer">
+    <div class="is-flex is-justify-content-center">
+        <div id="page-footer-text">
+            <p>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></p>
+            <p>Theme by <a target="_blank" rel="noopener" href="https://github.com/Chlamydomonos/hexo-theme-chlamydomonosia">Chlamydomonos</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/post-header.js"></script>
+
+
+<script src="/js/post-nav.js"></script>
+
+
+<script src="/js/post-title.js"></script>
+
+    
+    
+            
+<script src="/js/lifegame.js"></script>
+
+    
+
+    <div class="is-hidden" id="chlamydomonos-translations">
+        <div class="tr-expand">展开 ▷</div>
+        <div class="tr-retract">收回 ◁</div>
+    </div>
+    
+<script src="/js/expandable-frame.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>

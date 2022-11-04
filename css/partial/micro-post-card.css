@@ -1,0 +1,35 @@
+.micro-post-card {
+  padding: 0.5rem;
+}
+.micro-post-card .media {
+  display: flex;
+  border-radius: 0.25rem;
+}
+.micro-post-card .media .media-left {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  padding-right: 0.25rem;
+  margin-right: 0.25rem;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.micro-post-card .media .media-left .image {
+  display: flex;
+  align-self: center;
+}
+.micro-post-card .media .media-left .image div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  background-size: cover;
+}
+.micro-post-card .media .media-content {
+  display: flex;
+  align-self: center;
+  flex-basis: content;
+}
+.micro-post-card .media .media-content a {
+  display: flex;
+  color: black;
+  font-size: small;
+}

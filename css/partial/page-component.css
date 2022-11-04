@@ -1,0 +1,32 @@
+.page-number {
+  background-color: #e0e0e0;
+  color: black;
+  border-radius: 0.25rem;
+  min-width: 1.5rem;
+  text-align: center;
+  margin: 0.3rem;
+  font-weight: bold;
+}
+
+.page-number.current {
+  background-color: #888888;
+  color: white;
+}
+
+.extend {
+  color: black;
+  min-width: 1.5rem;
+  text-align: center;
+  margin: 0.3rem;
+}
+
+.page-num-input {
+  margin-left: 1.7rem;
+  margin-right: 0.4rem;
+}
+
+.page-button {
+  padding: 1px 0.3rem 1px 0.3rem;
+  height: auto;
+  margin-left: 1rem;
+}

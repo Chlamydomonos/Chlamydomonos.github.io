@@ -1,0 +1,16 @@
+#page-footer {
+  background-color: #f6f6f6;
+  border-top: 2px outset;
+}
+
+#page-footer-text {
+  text-align: center;
+}
+#page-footer-text a {
+  color: black;
+  font-weight: bolder;
+}
+
+.footer-placeholder {
+  height: 25vw;
+}

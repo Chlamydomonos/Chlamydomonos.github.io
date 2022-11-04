@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        一个神奇的Git教程（一）——基础的基础 | Suondeea
+    </title>
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/9ed2d62345.js" crossorigin="anonymous"></script>
+    
+<script src="/js/utils/color.js"></script>
+
+    
+<script src="/js/page-jump.js"></script>
+
+
+    
+    
+<link rel="stylesheet" href="/color-themes/light.css">
+
+
+    
+    
+<link rel="stylesheet" href="/hljs-themes/hljs-theme-light.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    
+        <header class="post-header is-hidden-mobile ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        一个神奇的Git教程（一）——基础的基础
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+        <header class="post-header is-hidden-mobile  post-header-placeholder without-content ">
+            <div class="container is-fullhd is-flex is-justify-content-space-between is-align-items-center is-full-height">
+                <section class="is-hidden-mobile is-flex-shrink-0">
+                    <h2><a href="/">Suondeea </a></h2>
+                </section>
+                <h3 class="is-hidden-mobile is-family-serif is-full-height is-flex is-align-items-center is-flex-shrink-0">
+                    <div class="is-full-height" id="post-title-in-header">
+                                <div class="is-full-height is-flex-shrink-0 is-flex is-align-items-center is-justify-content-center">
+                                    <div class="auto-hide-overflow">
+                                        一个神奇的Git教程（一）——基础的基础
+                                    </div>
+                                </div>
+                    </div>
+                </h3>
+                <aside class="is-flex-shrink-0">
+                    <h3 class="is-inline-block"><a href="/">首页</a></h3>
+                    <h3 class="is-inline-block"><a href="/about">关于</a></h3>
+                    <h3 class="is-inline-block"><a href="/archives">归档</a></h3>
+                </aside>
+            </div>
+        </header>
+
+<div class="columns is-gapless">
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+    <div class="column without-content">
+        <div class="background-1 main-column">
+            <div>
+    <div id="post-title-and-cover">
+        <div id="cover-div">
+            <img id="cover-div-img" src="https://i.loli.net/2021/05/01/jiI89TJS4BrRGdE.jpg">
+        </div>
+        <div id="cover-blur-outer">
+            <div id="cover-blur-inner">
+                <img id="cover-blur-img" src="https://i.loli.net/2021/05/01/jiI89TJS4BrRGdE.jpg ">
+            </div>
+        </div>
+        <div id="post-title-background">
+            <div id="post-title-text">
+                一个神奇的Git教程（一）——基础的基础
+                
+<header class="post-tags">
+    <div class="tags">
+        
+                <a class="tag post-tag" href="/tags/Git/">Git</a>
+        
+                <a class="tag post-tag" href="/tags/Git%E6%95%99%E7%A8%8B/">Git教程</a>
+        
+    </div>
+</header>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="post-date background-2">
+                
+                        <p>发布时间: 2021-05-09, 07:16:05</p>
+                
+
+                
+                        <p>上次更新: 2021-06-26, 03:16:18</p>
+                
+            </div>
+            <div class="content background-2" id="post-content-background" style="padding: 0.5rem;">
+                <div id="all-post-contents">
+                    <div align=center style="margin:20px;">
+    <div style="color: red; font-size:250%; border: 3px solid red; border-radius: 6px; display: inline-block">
+        <b>&nbsp;——注意——&nbsp;</b>
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/style/clm-code.css">
+
+<p>Git是本次班团活动“Project404智能系统”的必要工具。参加本次活动的同学们请务必学会基本的Git操作。</p>
+<span id="more"></span>
+<h1 id="什么是Git？"><a href="#什么是Git？" class="headerlink" title="什么是Git？"></a>什么是Git？</h1><h2 id="一-版本控制"><a href="#一-版本控制" class="headerlink" title="一. 版本控制"></a>一. 版本控制</h2><p>假设这样的场景——</p>
+<ul>
+<li><p>你正在开发一个项目。于是，你建立了一个源代码文件——<code>a.cpp</code>。</p>
+</li>
+<li><p>第一天，你完成了项目一半的内容，并且把它们保存在了<code>a.cpp</code>里面。</p>
+</li>
+<li><p>第二天，你又完成了项目四分之一的内容，并且删掉了第一天写的一小部分内容。可是，当你保存了<code>a.cpp</code>后，开始debug的时候，你才发现——你刚刚删掉的东西正是项目的关键代码。更可怕的是，你已经完全忘了你第一天是怎么写出的它们。</p>
+</li>
+<li><p>第三天，你长了教训。你绞尽脑汁，修复了第一天和第二天写的代码，并且把这个文件另存为<code>a_1.cpp</code>。</p>
+</li>
+<li><p>第四天，你完成了最后的四分之一，并把这个文件另存为<code>a_2.cpp</code>。</p>
+</li>
+<li><p>第五天，你修复了一些bug，并把这个文件另存为<code>a_3.cpp</code>。</p>
+</li>
+<li><p>第六天……</p>
+</li>
+<li><p>第七天……</p>
+</li>
+<li><p>最后，你的文件夹变成了这样——</p>
+<p><img src="https://i.loli.net/2021/05/01/jiI89TJS4BrRGdE.jpg" alt=""></p>
+<div align="center" style="color: grey; margin: 10px;">图片仅供参考</div>
+</li>
+<li><p>于是，你不禁思考——有没有一个软件，自动帮我备份代码呢？</p>
+</li>
+</ul>
+<p>再假设这样的场景——</p>
+<ul>
+<li>你和你的同学一起开发一个项目。为此，你建立了一个源代码文件——<code>a.cpp</code>。</li>
+<li>第一天，你写了这个文件的一半，你的同学写了另一半，并把他的文件发给了你。</li>
+<li>现在，你有两个名为<code>a.cpp</code>的文件。你把你同学的内容复制粘贴进了你自己的<code>a.cpp</code>里，并把这个合并后的文件发给了你的同学。</li>
+<li>第二天，你们修复了程序中的若干bug。你修复完你的部分后，也收到了你的同学发给你的文件。</li>
+<li>你发现，你的文件在第1, 3, 15, 24, ……行有修改，你同学的文件在第4, 8, 19, 33, ……行有修改。</li>
+<li>于是，你只好又一行一行地检查代码，来看这行是否被你或者你的同学修改过。</li>
+<li>于是，你不禁思考——有没有一个软件，自动帮我合并不同版本呢？</li>
+</ul>
+<div style="font-size: 200%;"><b>这个软件，就是版本控制系统。</b></div>
+
+
+
+<p>版本控制系统的功能——</p>
+<ul>
+<li>接收用户提交的代码，记录提交历史记录</li>
+<li>允许用户回退到自己之前的提交</li>
+<li>允许用户创建不同的版本并发布</li>
+<li>允许多个用户同时发布不同的版本，并合并这些版本成为新的版本</li>
+</ul>
+<p>为了实现以上功能，版本控制系统会建立一个版本库。版本库可能在用户自己的电脑上，也可能位于网络中的服务器上。因此，版本控制系统分为两种类型——</p>
+<ul>
+<li>中心式——只有一个中心版本库，位于服务器上，所有用户需要通过网络向这个版本库提交版本。比较著名的有SVN等。</li>
+<li>分布式——每个用户的计算机上有一个版本库，用户直接向本地版本库提交版本，不同用户的版本库之间通过网络互相同步。在Git出现之前，比较著名的有BitKeeper等。</li>
+</ul>
+<h2 id="二-Git的诞生"><a href="#二-Git的诞生" class="headerlink" title="二. Git的诞生"></a>二. Git的诞生</h2><p>在2005年之前，Linus创建的Linux社区一直使用BitKeeper作为版本控制系统。但是，2005年，BitKeeper决定对Linux社区收费。一怒之下，Linus用两个星期的时间，用C语言开发了一个简单但是极其强大的分布式版本控制系统，用于管理Linux的代码。这个版本控制系统也被开源，称为<strong>Git</strong>。</p>
+<p>几年后，Git风靡世界，成为最著名的版本控制系统。</p>
+<h1 id="Git的原理"><a href="#Git的原理" class="headerlink" title="Git的原理"></a>Git的原理</h1><p>一个用Git管理的项目由三部分组成——工作区，暂存区和版本库。</p>
+<p><img src="git.svg" alt=""></p>
+<h6 id="jump1"></h6>
+
+<p>工作区就是用户实际看到的文件夹。暂存区和版本库都位于项目文件夹中的<code>.git</code>文件夹中。用户可以使用<code>add</code>指令把文件加入暂存区，也可以使用<code>checkout</code>指令用暂存区的文件更新工作区。当用户使用<code>commit</code>指令时，暂存区中的文件受到的修改会被总结成一个提交，放入版本库。在版本库里，提交之间形成一张图，代表其互相的依赖关系。版本库中可以有若干称为<code>分支</code>的指针指向一些提交，代表一个版本。同时，版本库中还有一个特殊指针<code>HEAD</code>，指向新的提交将会被放到的位置。用户可以用<code>reset</code>指令把<code>HEAD</code>的内容覆盖到暂存区。此外，由于不同的版本库之间通过网络互相连接，用户也可以使用<code>pull</code>和<code>push</code>指令把自己的版本库与远程版本库同步。</p>
+<h1 id="如何安装Git"><a href="#如何安装Git" class="headerlink" title="如何安装Git"></a>如何安装Git</h1><p><del>鉴于使用Linux系统的大佬们应该都会用Git</del>，以下的内容只针对Windows用户。</p>
+<p>为了安装Git，你首先要访问<a target="_blank" rel="noopener" href="https://gitforwindows.org/">Git For Windows官网</a>下载最新版本Git安装包，然后双击运行。</p>
+<p>接下来，一路点击Next直到出现以下界面：</p>
+<p><img src="https://i.loli.net/2021/05/09/MW9SrKP58JNmYij.png" alt=""></p>
+<p>在这里取消勾选<code>Git GUI Here</code>选项。</p>
+<p>接下来，一路Next直到出现以下界面：</p>
+<p><img src="https://i.loli.net/2021/05/09/rmgl7DbGa5uFkdR.png" alt=""></p>
+<p>不喜欢Vim的小伙伴们可以将此选项改为“Use Visual Studio Code as Git’s default editor”。</p>
+<p>接下来，一路Next直到安装完成即可。</p>
+<h1 id="如何使用Git"><a href="#如何使用Git" class="headerlink" title="如何使用Git"></a>如何使用Git</h1><h2 id="零-打开Git-Bash"><a href="#零-打开Git-Bash" class="headerlink" title="零. 打开Git Bash"></a>零. 打开Git Bash</h2><p>Git Bash是一个用于在Windows系统上使用Git以及其他Linux命令的命令行工具。要想在某个文件夹中打开Git Bash，只需要右键单击该文件夹的<strong>空白部分</strong>，选择<code>Git Bash Here</code>。</p>
+<p>在之后的教程中，凡是提到“在<code>xxx</code>文件夹中输入<code>yyy</code>”，均意为“在<code>xxx</code>文件夹打开的Git Bash中输入<code>yyy</code>”；凭空提到的“输入<code>xxx</code>”，均意为“在当前文件夹打开的Git Bash中输入<code>xxx</code>”。</p>
+<h2 id="一-新建Git仓库"><a href="#一-新建Git仓库" class="headerlink" title="一. 新建Git仓库"></a>一. 新建Git仓库</h2><p>要想建立一个Git仓库其实是很简单的。你只需要输入<code>git init</code>，就可以把当前目录变成一个Git仓库。此时，该目录下应该会出现一个隐藏的<code>.git</code>文件夹。请勿删除该文件夹，原因见<a href="#jump1">此处</a>。</p>
+<p>当然，也可以在想建立Git仓库的目录的上级目录中输入<code>git init 目录名</code>，来在该目录中建立Git仓库。</p>
+<h2 id="二-克隆远程Git仓库"><a href="#二-克隆远程Git仓库" class="headerlink" title="二. 克隆远程Git仓库"></a>二. 克隆远程Git仓库</h2><p>要想克隆一个远程的Git仓库，其实是更加简单的。你只需要输入<code>git clone 远程仓库地址</code>，Git就会在当前目录下创建一个与远程仓库同名的文件夹，并把远程仓库克隆到本地。</p>
+<h2 id="三-添加文件到暂存区"><a href="#三-添加文件到暂存区" class="headerlink" title="三. 添加文件到暂存区"></a>三. 添加文件到暂存区</h2><p>众所周知，为了记录版本，我们需要把经过了修改的文件添加到暂存区。使用<code>git add 文件名</code>命令，即可把对应文件添加到暂存区。当然，你也可以输入<code>git add 文件名1 文件名2 ……</code>来一次把多个文件添加到暂存区。</p>
+<p>此外，你也可以输入<code>git add 文件夹名</code>来把该文件夹内以及该文件夹的所有子文件夹内的所有文件添加到暂存区。</p>
+<p>因此，由于<code>.</code>代表当前目录，输入<code>git add .</code>即可把整个项目的全部文件添加到暂存区。然而，这么做可能是错误的，因为像编译结果等文件并不应该被纳入版本库。</p>
+<h2 id="四-把暂存区文件提交进版本库"><a href="#四-把暂存区文件提交进版本库" class="headerlink" title="四. 把暂存区文件提交进版本库"></a>四. 把暂存区文件提交进版本库</h2><p>这是Git最关键的操作之一。使用<code>git commit -m &quot;提交消息&quot;</code>命令，可以把暂存区提交进版本库。注意，这里的提交消息是必需的，最好在提交消息中简要描述你对文件做的更改。当然，提交之后，暂存区将被清空，在你下次提交更改之前，你需要重新进行添加文件到暂存区的工作。</p>
+<h2 id="五-把本地仓库与远程仓库连接"><a href="#五-把本地仓库与远程仓库连接" class="headerlink" title="五. 把本地仓库与远程仓库连接"></a>五. 把本地仓库与远程仓库连接</h2><p>对于从远程克隆下来的仓库，这步已经在克隆过程中完成了。因此，只有在本地创建的仓库需要执行此步骤。</p>
+<p>输入<code>git remote add 远程仓库名称 远程仓库地址</code>来把本地仓库与远程仓库连接。注意，一般把第一个连接的远程仓库命名为<code>origin</code>。</p>
+<h2 id="六-同步本地仓库与远程仓库"><a href="#六-同步本地仓库与远程仓库" class="headerlink" title="六. 同步本地仓库与远程仓库"></a>六. 同步本地仓库与远程仓库</h2><p>同步仓库的操作非常重要，但也是非常简单的。输入<code>git pull 远程仓库名 分支名</code>即可把远程仓库上某个分支的内容同步到本地，输入<code>git push 远程仓库名 分支名</code>即可把本地的内容同步到远程仓库。注意，在每次同步时，最好先<code>pull</code>再<code>push</code>。此外，如果远程仓库上还没有分支，你可以使用<code>git push -u 远程仓库名 分支名</code>来新建并同步分支。一般来说，当你第一次向远程仓库上传更改时，你需要使用<code>git push origin master</code>或<code>git push origin main</code>（如果你很重视政治正确）来在远程仓库中建立一个主分支。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>对于目前的班级活动工作，使用Git的工作流程基本为——</p>
+<ul>
+<li>克隆远程仓库到本地</li>
+<li>做出自己的修改</li>
+<li>使用<code>git add .</code>添加项目全部文件到暂存区（对于班级项目来说，这样并不会有危险，详见下一章教程）</li>
+<li>使用<code>git commit -m &quot;提交信息&quot;</code>提交更改</li>
+<li>使用<code>git pull origin master</code>及<code>git push origin master</code>同步更改到远程仓库</li>
+</ul>
+
+                </div>
+            </div>
+            <div class="comment-container">
+                
+
+
+        <div class="comment">
+            <script src="https://utteranc.es/client.js"
+                repo="Chlamydomonos/blog-comments"
+                issue-term="pathname"
+                
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+            </script>
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="column is-3 is-hidden-mobile without-content">
+        <div class="container post-side without-content">
+            
+
+<div class="card" id="profile-card">
+    
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="https://s2.loli.net/2022/01/07/C5idKy4ZL8rOSJc.png" alt="Placeholder image">
+                </figure>
+            </div>
+    
+    <div class="card-content profile-card-content">
+        <div class="user-avatar-and-name">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img class="user-avatar" src="https://s2.loli.net/2022/01/07/2KhZqiJQt3vY8g1.jpg" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="media-content user-name-div">
+                    <p class="title user-name ">Chlamydomonos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content user-information">
+            <p class="user-description  has-text-centered">
+                Xia'd tschilhib'sgn
+            </p>
+            <p class="user-location  has-text-centered">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>Chlamydomonosia</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+            <div class="cards-margin without-content"></div>
+            <div class="card post-nav vertical-scroll">
+    
+            <div class="columns is-gapless" id="post-nav-top-buttons">
+                <div class="column" id="post-prev-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2021/06/20/kspCareer-1/">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <span>上一页</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="column" id="post-next-column">
+                    <div class="post-button is-flex is-justify-content-center">
+                        <a href="/2021/05/09/testCode/">
+                            <span class="icon-text">
+                                <span>下一页</span>
+                                <span class="icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="post-nav-scroll-area">
+        <div class="post-nav-scroll-content">
+            <div class="card-content post-nav-card-content">
+                <p class="post-title-in-nav">
+                    <a href="#post-title-text">
+                        一个神奇的Git教程（一）——基础的基础
+                    </a>
+                </p>
+                <div id="titles-in-post">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="column is-1 is-hidden-mobile without-content"></div>
+</div>
+<footer class="footer" id="page-footer">
+    <div class="is-flex is-justify-content-center">
+        <div id="page-footer-text">
+            <p>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></p>
+            <p>Theme by <a target="_blank" rel="noopener" href="https://github.com/Chlamydomonos/hexo-theme-chlamydomonosia">Chlamydomonos</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/post-header.js"></script>
+
+
+<script src="/js/post-nav.js"></script>
+
+
+<script src="/js/post-title.js"></script>
+
+    
+    
+            
+<script src="/js/lifegame.js"></script>
+
+    
+
+    <div class="is-hidden" id="chlamydomonos-translations">
+        <div class="tr-expand">展开 ▷</div>
+        <div class="tr-retract">收回 ◁</div>
+    </div>
+    
+<script src="/js/expandable-frame.js"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
